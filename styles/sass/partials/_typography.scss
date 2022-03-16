@@ -1,0 +1,93 @@
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: $bodyFont, sans-serif;
+  font-size: 1rem;
+  color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+  font-family: $headingFont;
+  font-weight: normal;
+  color: $black;
+  margin: 0;
+}
+
+h1 {
+  font-size: 8.3rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4.6rem;
+  // margin-bottom: 18px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.815rem;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  text-align: center;
+  // margin-bottom: 18px;
+}
+
+h4 {
+  font-size: 2.15rem;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  // margin-bottom: 18px;
+}
+
+h5 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+p {
+  line-height: 1.6rem;
+  font-size: 1rem;
+  margin: 0 0 30px 0;
+  &.smallCopy {
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+ul,
+li,
+a,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
