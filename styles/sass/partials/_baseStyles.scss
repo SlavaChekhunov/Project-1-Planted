@@ -10,8 +10,27 @@ img {
   height: auto;
 }
 
-section {
-  padding: 100px;
+button {
+  font-family: $headingFont;
+  color: $white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: $green;
+  padding: 8px 16px;
+  border: 2px solid $green;
+  &.solid {
+    color: $white;
+    background-color: $green;
+    padding: 8px 20px;
+  }
+  &.submit {
+    color: $white;
+    background-color: $green;
+    padding: 8px 200px;
+  }
 }
-
-

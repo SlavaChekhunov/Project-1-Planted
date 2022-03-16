@@ -362,6 +362,32 @@ img {
   height: auto;
 }
 
+button {
+  font-family: "Josefin Sans";
+  color: #F0EFED;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #0E902D;
+  padding: 8px 16px;
+  border: 2px solid #0E902D;
+}
+button.solid {
+  color: #F0EFED;
+  background-color: #0E902D;
+  padding: 8px 20px;
+}
+button.submit {
+  color: #F0EFED;
+  background-color: #0E902D;
+  padding: 8px 200px;
+}
+
 section {
   padding: 100px;
 }
