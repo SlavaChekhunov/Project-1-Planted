@@ -4,20 +4,48 @@ section {
 
 .gallery {
   background-size: cover;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  li {
+    flex-basis: 31%;
+  }
 }
 
-.gallery h2 {
-  text-align: center;
-  margin-bottom: 40px;
+.about {
+  padding: 200px;
+  background-color: $white;
+  .aboutContainer {
+    text-align: center;
+  }
 }
 
-.gallery ul {
+.founder {
+  background: $white;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-.gallery li {
-  flex-basis: 31%;
-  margin-bottom: 20px;
+  .imageContainer {
+    width: 40%;
+  }
+
+  img {
+    box-shadow: 20px 0px 0px -20px $yellow, 19px 20px 0px 4px $yellow;
+  }
+
+  .textContainer {
+    width: 60%;
+  }
+
+  .solid {
+    margin-top: 20px;
+  }
 }
