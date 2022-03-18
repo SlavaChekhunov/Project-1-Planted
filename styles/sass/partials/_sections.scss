@@ -51,6 +51,8 @@ section {
 }
 
 .workshop {
+
+  //throw in a position relative on the div that contains the img and position absolute on the image itself, or another way is negative margin. to get it to float. 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -91,35 +93,31 @@ section {
     flex-wrap: wrap;
     width: 100%;
     .contentContainer {
-      padding: 45px;
-      margin: 50px 25px 25px;
+    
       width: 40%;
       display: flex;
-      flex-direction: column;
+      
     }
 
     h5 {
       margin: 15px 0;
+      
     }
 
-    h5::before {
-      content: "";
-      width: 50px;
-      height: 50px;
-      background-color: $yellow;
-      position: absolute;
-      left: 400px;
-      border-radius: 80px;
-    }
+   
   }
 }
 
-.recent {
+.container {
   background-color: $white;
-  .recentImgContainer,
-  .recentContent {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  
+  .recent {
+    width: 30%;
+  }
+
+  .mission {
+    width: 70%;
   }
 
   .recentImgContainer {
@@ -131,33 +129,32 @@ section {
   .contentContainer {
     padding: 20px;
     margin-left: 220px;
-    width: 25%;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
+  }
     
-    ul {
-      list-style: inside;
-      padding-left: 10px;
-    }
+  //   ul {
+  //     list-style: inside;
+  //     padding-left: 10px;
+  //   }
 
-    h6 {
-      padding-bottom: 10px;
-    }
+  //   h6 {
+  //     padding-bottom: 10px;
+  //   }
 
-    a {
-     color: $green;
-    }
+  //   a {
+  //    color: $green;
+  //   }
     
   }
 
-  .missionContent,
-  .missionImgContainer {
-    display: flex;
-    flex-direction: column;
+  // .missionContent,
+  // .missionImgContainer {
+  //   display: flex;
+  //   flex-direction: column;
     
-  }
+  // }
 
-}
+

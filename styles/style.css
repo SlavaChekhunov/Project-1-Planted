@@ -494,50 +494,34 @@ section {
   width: 100%;
 }
 .icons .four-icons .contentContainer {
-  padding: 45px;
-  margin: 50px 25px 25px;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .icons .four-icons h5 {
   margin: 15px 0;
 }
-.icons .four-icons h5::before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-color: #F8E71C;
-  position: absolute;
-  left: 400px;
-  border-radius: 80px;
-}
 
-.recent {
+.container {
   background-color: #F0EFED;
-}
-.recent .recentImgContainer,
-.recent .recentContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
-.recent .recentImgContainer img {
+.container .recent {
+  width: 30%;
+}
+.container .mission {
+  width: 70%;
+}
+.container .recentImgContainer img {
   -webkit-box-shadow: 34px 12px 0px -12px white;
           box-shadow: 34px 12px 0px -12px white;
 }
-.recent .contentContainer {
+.container .contentContainer {
   padding: 20px;
   margin-left: 220px;
-  width: 25%;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,26 +533,6 @@ section {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-.recent .contentContainer ul {
-  list-style: inside;
-  padding-left: 10px;
-}
-.recent .contentContainer h6 {
-  padding-bottom: 10px;
-}
-.recent .contentContainer a {
-  color: #0E902D;
-}
-.recent .missionContent,
-.recent .missionImgContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .copyright {
@@ -617,8 +581,6 @@ header h1 {
 }
 
 .contactForm {
-  width: calc(50% - 70px);
-  margin-left: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,4 +588,84 @@ header h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.contactForm .input-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactForm textarea,
+.contactForm input {
+  background-color: #F0EFED;
+  margin-bottom: 40px;
+  border: none;
+  padding: 20px 0 20px 5px;
+  color: #2C2C2C;
+  font-family: "Roboto";
+}
+.contactForm textarea::-webkit-input-placeholder, .contactForm input::-webkit-input-placeholder {
+  color: #2C2C2C;
+  opacity: 0.65;
+  line-height: 1.2rem;
+}
+.contactForm textarea::-moz-placeholder, .contactForm input::-moz-placeholder {
+  color: #2C2C2C;
+  opacity: 0.65;
+  line-height: 1.2rem;
+}
+.contactForm textarea:-ms-input-placeholder, .contactForm input:-ms-input-placeholder {
+  color: #2C2C2C;
+  opacity: 0.65;
+  line-height: 1.2rem;
+}
+.contactForm textarea::-ms-input-placeholder, .contactForm input::-ms-input-placeholder {
+  color: #2C2C2C;
+  opacity: 0.65;
+  line-height: 1.2rem;
+}
+.contactForm textarea::placeholder,
+.contactForm input::placeholder {
+  color: #2C2C2C;
+  opacity: 0.65;
+  line-height: 1.2rem;
+}
+.contactForm input {
+  width: calc(50% - 30px);
+  border-bottom: 3px solid #0E902D;
+}
+.contactForm input::-webkit-input-placeholder {
+  padding: 0 0 0 50px;
+}
+.contactForm input::-moz-placeholder {
+  padding: 0 0 0 50px;
+}
+.contactForm input:-ms-input-placeholder {
+  padding: 0 0 0 50px;
+}
+.contactForm input::-ms-input-placeholder {
+  padding: 0 0 0 50px;
+}
+.contactForm input::placeholder {
+  padding: 0 0 0 50px;
+}
+.contactForm textarea {
+  border: 3px solid #0E902D;
+}
+.contactForm textarea::-webkit-input-placeholder {
+  padding: 50px 0 0 50px;
+}
+.contactForm textarea::-moz-placeholder {
+  padding: 50px 0 0 50px;
+}
+.contactForm textarea:-ms-input-placeholder {
+  padding: 50px 0 0 50px;
+}
+.contactForm textarea::-ms-input-placeholder {
+  padding: 50px 0 0 50px;
+}
+.contactForm textarea::placeholder {
+  padding: 50px 0 0 50px;
 }
