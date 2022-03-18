@@ -1,1 +1,35 @@
+header {
+  background: url(../../../assets/home-image-1.jpg) center;
+  background-size: cover;
 
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      
+    }
+
+    li:first-child {
+      margin-right: 20px;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      font-size: 1rem;
+      padding: 15px 40px 10px 40px;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  
+}

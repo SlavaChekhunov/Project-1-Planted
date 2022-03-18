@@ -49,3 +49,115 @@ section {
     margin-top: 20px;
   }
 }
+
+.workshop {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .workshopImgContainer {
+    width: 50%;
+    img {
+      box-shadow: 20px 0px 0px -20px $yellow, 20px 20px 0px 0px $yellow;
+    }
+  }
+
+  .workshopContent {
+    width: 50%;
+    .contentContainer {
+      margin: 0 auto;
+    }
+  }
+
+  .discoverContent {
+    width: 50%;
+    .contentContainer {
+      margin: 0 auto;
+    }
+  }
+
+  .discoverImgContainer {
+    width: 50%;
+    img {
+      box-shadow: 20px 0px 0px -20px $yellow, -20px 20px 0px 0px $yellow;
+    }
+  }
+}
+.icons {
+  background-color: $white;
+  .four-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    .contentContainer {
+      padding: 45px;
+      margin: 50px 25px 25px;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h5 {
+      margin: 15px 0;
+    }
+
+    h5::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: $yellow;
+      position: absolute;
+      left: 400px;
+      border-radius: 80px;
+    }
+  }
+}
+
+.recent {
+  background-color: $white;
+  .recentImgContainer,
+  .recentContent {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .recentImgContainer {
+    img {
+      box-shadow: 34px 12px 0px -12px white;
+    }
+  }
+
+  .contentContainer {
+    padding: 20px;
+    margin-left: 220px;
+    width: 25%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    
+    ul {
+      list-style: inside;
+      padding-left: 10px;
+    }
+
+    h6 {
+      padding-bottom: 10px;
+    }
+
+    a {
+     color: $green;
+    }
+    
+  }
+
+  .missionContent,
+  .missionImgContainer {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+}
