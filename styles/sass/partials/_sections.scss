@@ -108,53 +108,7 @@ section {
   }
 }
 
-.container {
-  background-color: $white;
-  display: flex;
-  
-  .recent {
-    width: 30%;
-  }
 
-  .mission {
-    width: 70%;
-  }
-
-  .recentImgContainer {
-    img {
-      box-shadow: 34px 12px 0px -12px white;
-    }
-  }
-
-  .contentContainer {
-    padding: 20px;
-    margin-left: 220px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-    
-  //   ul {
-  //     list-style: inside;
-  //     padding-left: 10px;
-  //   }
-
-  //   h6 {
-  //     padding-bottom: 10px;
-  //   }
-
-  //   a {
-  //    color: $green;
-  //   }
-    
-  }
-
-  // .missionContent,
-  // .missionImgContainer {
-  //   display: flex;
-  //   flex-direction: column;
-    
-  // }
+ 
 
 

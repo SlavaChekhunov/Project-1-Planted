@@ -1,0 +1,98 @@
+.container {
+  background-color: $white;
+  display: flex;
+
+  .recent {
+    width: 30%;
+  }
+
+  .mission {
+    width: 70%;
+  }
+
+  .missionImgContainer {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 350px;
+
+    img {
+      box-shadow: 20px 0px 0px -20px $yellow, -20px 20px 0px 0px $yellow;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .missionContent {
+    padding: 40px 30px 20px 40px;
+    box-shadow: -9px 9px 3px 0px $yellow;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      text-align: start;
+    }
+    .special {
+      color: $green;
+      padding-bottom: 40px;
+    }
+
+    //how to make the span bold
+  }
+
+  .commentContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 20px 90px;
+
+    h4 {
+        margin-bottom: 40px;
+    }
+
+    .commentOne,
+    .commentTwo {
+        display: flex;
+        .imageContainer {
+            width: 40%;
+        }
+
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+
+            h5 {
+                color: $green;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+  }
+
+  .recentImgContainer {
+    margin-top: 100px;
+    img {
+      box-shadow: 34px 12px 0px -12px white;
+    }
+  }
+
+  .contentContainer {
+    padding: 20px;
+    margin-left: 220px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  ul {
+    list-style: inside;
+    padding-left: 10px;
+  }
+
+  h6 {
+    padding-bottom: 10px;
+  }
+
+  a {
+    color: $green;
+  }
+}
