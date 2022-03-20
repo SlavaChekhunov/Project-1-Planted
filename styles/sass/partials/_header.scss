@@ -45,6 +45,31 @@ header {
   background-size: cover;
   height: 80vh;
   
+  // .nav {
+  //   height: 15vh;
+  //   background-color: $black;
+  // }
+
+  .contentContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 300px;
+  }
+  
+}
+
+.contactHeader {
+  background: url(../assets/contact-header-1.jpg) center;
+  background-size: cover;
+  height: 80vh;
+
+  .contentContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 300px;
+  }
 }
 
 .homeHeader {
