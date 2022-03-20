@@ -1,36 +1,72 @@
 header {
-  background: url(../../../assets/home-image-1.jpg) center;
-  background-size: cover;
-  padding: 100px;
-
   .nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    ul {
+    
+    ul,
+    h2 {
       display: flex;
       justify-content: space-between;
-      
+      color: $white;
+      margin-top: 10px;
     }
-
+    
     li:first-child {
       margin-right: 20px;
     }
-
+    
     a {
       display: inline-block;
       width: 100%;
-      font-size: 1rem;
+      font-size: 1.4rem;
       padding: 15px 40px 10px 40px;
       text-decoration: none;
       text-align: center;
     }
   }
-
+  
   h1 {
     text-align: center;
+    color: $white;
+    span {
+      color: $yellow;
+    }
   }
-
   
+  //background header vh 80%
+  //div within in that was 80% of the vh 
+  //set h1 to be 20 and image to be like 10
+  //negative margin for header
+}
+
+.blogHeader {
+  background: url(../assets/blog-header-1.jpg) center;
+  background-size: cover;
+  height: 80vh;
+  
+}
+
+.homeHeader {
+  background: url(../assets/home-image-1.jpg) center;
+  background-size: cover;
+  height: 80vh;
+
+  .headerContent {
+    position: relative;
+    .contentContainer{
+      position: absolute;
+      z-index: 2;
+    }
+
+    .headerImgContainer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin: 100px 0 0 300px;
+      z-index: 1;
+     
+    }
+  }
+ 
 }

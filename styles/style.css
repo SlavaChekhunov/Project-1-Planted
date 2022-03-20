@@ -446,24 +446,26 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .workshop .workshopImgContainer {
+  position: relative;
   width: 50%;
+  margin-bottom: 100px;
+  margin-top: 250px;
 }
 .workshop .workshopImgContainer img {
+  position: absolute;
+  bottom: 0;
   -webkit-box-shadow: 20px 0px 0px -20px #F8E71C, 20px 20px 0px 0px #F8E71C;
           box-shadow: 20px 0px 0px -20px #F8E71C, 20px 20px 0px 0px #F8E71C;
 }
 .workshop .workshopContent {
   width: 50%;
-}
-.workshop .workshopContent .contentContainer {
-  margin: 0 auto;
 }
 .workshop .discoverContent {
   width: 50%;
@@ -472,9 +474,12 @@ section {
   margin: 0 auto;
 }
 .workshop .discoverImgContainer {
+  position: relative;
+  margin-bottom: 270px;
   width: 50%;
 }
 .workshop .discoverImgContainer img {
+  position: absolute;
   -webkit-box-shadow: 20px 0px 0px -20px #F8E71C, -20px 20px 0px 0px #F8E71C;
           box-shadow: 20px 0px 0px -20px #F8E71C, -20px 20px 0px 0px #F8E71C;
 }
@@ -494,6 +499,7 @@ section {
   width: 100%;
 }
 .icons .four-icons .contentContainer {
+  margin: 0 auto;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,6 +507,15 @@ section {
 }
 .icons .four-icons h5 {
   margin: 15px 0;
+}
+.icons .four-icons i {
+  margin: 25px 20px 0 0;
+}
+
+.banner-image {
+  background: url(../assets/banner-image.jpg) center;
+  background-size: cover;
+  height: 50vh;
 }
 
 .copyright {
@@ -510,11 +525,6 @@ section {
   color: #F0EFED;
 }
 
-header {
-  background: url(../../../assets/home-image-1.jpg) center;
-  background-size: cover;
-  padding: 100px;
-}
 header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,13 +536,16 @@ header .nav {
       -ms-flex-align: center;
           align-items: center;
 }
-header .nav ul {
+header .nav ul,
+header .nav h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #F0EFED;
+  margin-top: 10px;
 }
 header .nav li:first-child {
   margin-right: 20px;
@@ -540,13 +553,49 @@ header .nav li:first-child {
 header .nav a {
   display: inline-block;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding: 15px 40px 10px 40px;
   text-decoration: none;
   text-align: center;
 }
 header h1 {
   text-align: center;
+  color: #F0EFED;
+}
+header h1 span {
+  color: #F8E71C;
+}
+
+.blogHeader {
+  background: url(../assets/blog-header-1.jpg) center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.homeHeader {
+  background: url(../assets/home-image-1.jpg) center;
+  background-size: cover;
+  height: 80vh;
+}
+.homeHeader .headerContent {
+  position: relative;
+}
+.homeHeader .headerContent .contentContainer {
+  position: absolute;
+  z-index: 2;
+}
+.homeHeader .headerContent .headerImgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 100px 0 0 300px;
+  z-index: 1;
 }
 
 .contactForm {
@@ -650,10 +699,10 @@ header h1 {
   display: flex;
 }
 .container .recent {
-  width: 30%;
+  width: 35%;
 }
 .container .mission {
-  width: 70%;
+  width: 65%;
 }
 .container .missionImgContainer {
   position: relative;
@@ -718,21 +767,21 @@ header h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.container .commentContainer .commentOne .textContainer h5,
-.container .commentContainer .commentTwo .textContainer h5 {
+.container .commentContainer .commentOne .textContainer h6,
+.container .commentContainer .commentTwo .textContainer h6 {
   color: #0E902D;
   margin-bottom: 10px;
 }
 .container .recentImgContainer {
-  margin-top: 100px;
+  margin: 100px 100px 0 0;
 }
 .container .recentImgContainer img {
-  -webkit-box-shadow: 34px 12px 0px -12px white;
-          box-shadow: 34px 12px 0px -12px white;
+  -webkit-box-shadow: 37px 12px 0px -12px white;
+          box-shadow: 37px 12px 0px -12px white;
 }
 .container .contentContainer {
   padding: 20px;
-  margin-left: 220px;
+  margin: 0 95px 0 190px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,7 +798,11 @@ header h1 {
   list-style: inside;
   padding-left: 10px;
 }
-.container h6 {
+.container ul li {
+  padding-bottom: 10px;
+}
+.container h6,
+.container p {
   padding-bottom: 10px;
 }
 .container a {

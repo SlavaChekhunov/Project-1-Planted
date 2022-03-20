@@ -51,24 +51,28 @@ section {
 }
 
 .workshop {
-
-  //throw in a position relative on the div that contains the img and position absolute on the image itself, or another way is negative margin. to get it to float. 
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   .workshopImgContainer {
+    position: relative;
     width: 50%;
+    margin-bottom: 100px;
+    margin-top: 250px;
     img {
+      position: absolute;
+      bottom: 0;
       box-shadow: 20px 0px 0px -20px $yellow, 20px 20px 0px 0px $yellow;
     }
   }
 
   .workshopContent {
     width: 50%;
-    .contentContainer {
-      margin: 0 auto;
-    }
+
+    // .contentContainer {
+    //   margin: 0 auto;
+    // }
   }
 
   .discoverContent {
@@ -77,15 +81,22 @@ section {
       margin: 0 auto;
     }
   }
-
+  
   .discoverImgContainer {
+    position: relative;
+    margin-bottom: 270px;
     width: 50%;
     img {
+      position: absolute;
       box-shadow: 20px 0px 0px -20px $yellow, -20px 20px 0px 0px $yellow;
     }
   }
 }
+
 .icons {
+  //wrap each link in an icon and put them in a div below 
+  //flex-basis of 51
+  //flex basis on img container and each container has a negative margin 
   background-color: $white;
   .four-icons {
     display: flex;
@@ -93,19 +104,28 @@ section {
     flex-wrap: wrap;
     width: 100%;
     .contentContainer {
-    
+      margin: 0 auto;
       width: 40%;
       display: flex;
-      
     }
+
 
     h5 {
       margin: 15px 0;
-      
     }
+
+   i {
+     margin: 25px 20px 0 0;
+   }
 
    
   }
+}
+
+.banner-image {
+  background: url(../assets/banner-image.jpg) center;
+  background-size: cover;
+  height: 50vh;
 }
 
 
