@@ -55,34 +55,30 @@ article {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
+  
   .workshopImgContainer {
     position: relative;
-    width: 50%;
-    margin-bottom: 100px;
-    margin-top: 250px;
+    margin-bottom: 120px;
     img {
-      position: absolute;
       bottom: 0;
+      position: absolute;
       box-shadow: 20px 0px 0px -20px $yellow, 20px 20px 0px 0px $yellow;
     }
   }
 
-  .workshopContent {
-    width: 50%;
+  
+  .workshopContent,
+  .workshopImgContainer,
+  .discoverContent,
+  .discoverImgContainer {
+    flex-basis: 40%;
   }
 
-  .discoverContent {
-    width: 50%;
-    .contentContainer {
-      margin: 0 auto;
-    }
-  }
+  
   
   .discoverImgContainer {
-    position: relative;
-    margin-bottom: 270px;
-    width: 50%;
+   position: relative;
+    margin-top: 150px;
     img {
       position: absolute;
       box-shadow: 20px 0px 0px -20px $yellow, -20px 20px 0px 0px $yellow;

@@ -455,29 +455,24 @@ article {
 }
 .workshop .workshopImgContainer {
   position: relative;
-  width: 50%;
-  margin-bottom: 100px;
-  margin-top: 250px;
+  margin-bottom: 120px;
 }
 .workshop .workshopImgContainer img {
-  position: absolute;
   bottom: 0;
+  position: absolute;
   -webkit-box-shadow: 20px 0px 0px -20px #F8E71C, 20px 20px 0px 0px #F8E71C;
           box-shadow: 20px 0px 0px -20px #F8E71C, 20px 20px 0px 0px #F8E71C;
 }
-.workshop .workshopContent {
-  width: 50%;
-}
-.workshop .discoverContent {
-  width: 50%;
-}
-.workshop .discoverContent .contentContainer {
-  margin: 0 auto;
+.workshop .workshopContent,
+.workshop .workshopImgContainer,
+.workshop .discoverContent,
+.workshop .discoverImgContainer {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 .workshop .discoverImgContainer {
   position: relative;
-  margin-bottom: 270px;
-  width: 50%;
+  margin-top: 150px;
 }
 .workshop .discoverImgContainer img {
   position: absolute;
@@ -883,4 +878,75 @@ header h1 span {
 }
 .container a {
   color: #0E902D;
+}
+
+@media (max-width: 768px) {
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery ul li {
+    margin: 0 auto 20px;
+  }
+
+  .founder .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+  }
+  .founder .wrapper .imageContainer {
+    margin-left: 100px;
+  }
+  .founder .wrapper .textContainer {
+    margin: 0 auto 40px;
+  }
+  .founder h4 {
+    margin: 50px 0 20px 0;
+  }
+  .founder button {
+    width: 90%;
+  }
+
+  .icons .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+  }
+  .icons .wrapper .contentContainer {
+    width: 100%;
+  }
+
+  .workshop .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+  }
+
+  .about .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+  }
 }
