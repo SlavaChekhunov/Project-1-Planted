@@ -388,6 +388,48 @@ button.submit {
   padding: 7px 200px;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav ul,
+.nav h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #F0EFED;
+  margin-top: 10px;
+}
+.nav li:first-child {
+  margin-right: 20px;
+}
+.nav a {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 15px 40px 10px 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #F0EFED;
+}
+h1 span {
+  color: #F8E71C;
+}
+
 section,
 article {
   padding: 100px;
@@ -564,47 +606,6 @@ footer .wrapper .footerFlexContainer .socialIcons i:first-child {
 }
 footer .wrapper .footerFlexContainer h6 {
   padding: 15px 15px 15px 0;
-}
-
-header .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-header .nav ul,
-header .nav h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #F0EFED;
-  margin-top: 10px;
-}
-header .nav li:first-child {
-  margin-right: 20px;
-}
-header .nav a {
-  display: inline-block;
-  width: 100%;
-  font-size: 1.4rem;
-  padding: 15px 40px 10px 40px;
-  text-decoration: none;
-  text-align: center;
-}
-header h1 {
-  text-align: center;
-  color: #F0EFED;
-}
-header h1 span {
-  color: #F8E71C;
 }
 
 .blogHeader {
@@ -938,6 +939,21 @@ header h1 span {
             justify-content: flex-start;
     height: 100%;
   }
+  .workshop .wrapper .workshopImgContainer img,
+.workshop .wrapper .discoverImgContainer img {
+    position: static;
+  }
+  .workshop .wrapper .discoverContent {
+    padding: 100px 0 0 0;
+  }
+  .workshop .wrapper .discoverContent,
+.workshop .wrapper .workshopContent {
+    text-align: center;
+  }
+  .workshop .wrapper .discoverContent button,
+.workshop .wrapper .workshopContent button {
+    width: 80%;
+  }
 
   .about .wrapper {
     -webkit-box-orient: vertical;
@@ -948,5 +964,45 @@ header h1 span {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 100%;
+  }
+
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .recent,
+.container .mission {
+    width: 100%;
+    padding: 0;
+  }
+  .container .recent .recentImgContainer,
+.container .mission .recentImgContainer {
+    margin-top: 50px;
+  }
+  .container .recent .recentImgContainer img,
+.container .mission .recentImgContainer img {
+    margin: 0 auto;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .container .recent .recentContent,
+.container .mission .recentContent {
+    width: 100%;
+    margin: 0 0 200px 0;
+  }
+  .container .recent .commentContainer .textContainer,
+.container .mission .commentContainer .textContainer {
+    padding-left: 20px;
+  }
+  .container .recent .contactForm,
+.container .mission .contactForm {
+    padding: 20px;
+  }
+  .container .recent .contactForm .submit,
+.container .mission .contactForm .submit {
+    margin: 0 20px 20px 60px;
   }
 }

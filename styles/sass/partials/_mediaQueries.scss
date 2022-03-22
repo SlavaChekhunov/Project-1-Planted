@@ -46,6 +46,26 @@
             flex-direction: column;
             justify-content: flex-start;
             height: 100%;
+
+            .workshopImgContainer,
+            .discoverImgContainer {
+                img {
+                    position: static;
+                }
+            }
+
+            
+            .discoverContent {
+                padding: 100px 0 0 0;
+            }
+
+            .discoverContent,
+            .workshopContent {
+                text-align: center;
+                button {
+                    width: 80%;
+                }
+            }
         }
     }
 
@@ -56,4 +76,83 @@
             height: 100%;
         }
     }
+//blog-section
+
+    .container {
+        flex-direction: column;
+
+       .recent,
+       .mission {
+           width: 100%;
+           padding: 0;
+
+           .recentImgContainer {
+                margin-top: 50px;
+                img {
+                    margin: 0 auto;
+                    width: 100%;
+                    box-shadow: none;
+                }
+           }
+
+           .recentContent {
+               width: 100%;
+               margin: 0 0 200px 0;
+           }
+
+           .commentContainer {
+               .textContainer {
+                   padding-left: 20px;
+               }
+           }
+
+           .contactForm {
+               padding: 20px;
+                
+               .submit {
+                margin: 0 20px 20px 60px;
+               }
+           }
+       }
+
+    }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// end of home Page
+// start of the contact page for
+
+// .footerFlexContainer {
+//     flex-direction: column;
+//     .wrapper {
+//         flex-direction: column;
+//     }
+    
+//     .secondForm {
+//         position: static;
+//     }
+// }
