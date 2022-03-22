@@ -416,7 +416,7 @@ button.submit {
 .nav a {
   display: inline-block;
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 15px 40px 10px 40px;
   text-decoration: none;
   text-align: center;
@@ -486,6 +486,7 @@ article {
 }
 
 .workshop {
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,7 +498,7 @@ article {
 }
 .workshop .workshopImgContainer {
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 .workshop .workshopImgContainer img {
   bottom: 0;
@@ -505,16 +506,19 @@ article {
   -webkit-box-shadow: 20px 0px 0px -20px #F8E71C, 20px 20px 0px 0px #F8E71C;
           box-shadow: 20px 0px 0px -20px #F8E71C, 20px 20px 0px 0px #F8E71C;
 }
+.workshop .contentContainer {
+  padding: 40px 0 50px 0;
+}
 .workshop .workshopContent,
 .workshop .workshopImgContainer,
 .workshop .discoverContent,
 .workshop .discoverImgContainer {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 43%;
+      flex-basis: 43%;
 }
 .workshop .discoverImgContainer {
   position: relative;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 .workshop .discoverImgContainer img {
   position: absolute;
@@ -538,10 +542,18 @@ article {
 }
 .icons .four-icons .contentContainer {
   margin: 0 auto;
-  width: 40%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.icons .four-icons i {
+  background-color: #F8E71C;
+  padding: 15px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 10px;
+  margin: 0 20px;
 }
 .icons .four-icons h5 {
   margin: 15px 0;

@@ -3,6 +3,8 @@ article {
   padding: 100px;
 }
 
+
+
 .gallery {
   background-size: cover;
 
@@ -52,13 +54,14 @@ article {
 }
 
 .workshop {
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   
   .workshopImgContainer {
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     img {
       bottom: 0;
       position: absolute;
@@ -66,19 +69,23 @@ article {
     }
   }
 
+  .contentContainer {
+      padding: 40px 0 50px 0;
+  }
+
   
   .workshopContent,
   .workshopImgContainer,
   .discoverContent,
   .discoverImgContainer {
-    flex-basis: 40%;
+    flex-basis: 43%;
   }
 
   
   
   .discoverImgContainer {
    position: relative;
-    margin-top: 150px;
+    margin-top: 80px;
     img {
       position: absolute;
       box-shadow: 20px 0px 0px -20px $yellow, -20px 20px 0px 0px $yellow;
@@ -87,9 +94,6 @@ article {
 }
 
 .icons {
-  //wrap each link in an icon and put them in a div below 
-  //flex-basis of 51
-  //flex basis on img container and each container has a negative margin 
   background-color: $white;
   .four-icons {
     display: flex;
@@ -98,10 +102,18 @@ article {
     width: 100%;
     .contentContainer {
       margin: 0 auto;
-      width: 40%;
+      width: 45%;
       display: flex;
     }
 
+    i {
+            background-color: $yellow;
+            padding: 15px;
+            border-radius: 50%;
+            position: relative;
+            bottom: 10px;
+            margin: 0 20px;
+        }
 
     h5 {
       margin: 15px 0;
